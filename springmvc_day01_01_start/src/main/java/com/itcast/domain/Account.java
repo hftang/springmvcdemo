@@ -1,6 +1,8 @@
 package com.itcast.domain;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author hftang
@@ -11,6 +13,9 @@ public class Account implements Serializable {
     private String name;
     private String password;
     private double money;
+
+    private List<User> list;
+    private Map<String,User> map;
 
     public String getName() {
         return name;
@@ -36,12 +41,30 @@ public class Account implements Serializable {
         this.money = money;
     }
 
+    public List<User> getList() {
+        return list;
+    }
+
+    public void setList(List<User> list) {
+        this.list = list;
+    }
+
+    public Map<String, User> getMap() {
+        return map;
+    }
+
+    public void setMap(Map<String, User> map) {
+        this.map = map;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
                 "name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 ", money=" + money +
+                ", list=" + list +
+                ", map=" + map +
                 '}';
     }
 }
