@@ -22,6 +22,15 @@
     <!--异常处理器-->
     <bean id="sysExceptionResolver" class="com.itcast.exptions.SysHandlerExceptHandler"></bean>
 
+    <!--配置拦截器-->
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/*"/>
+            <bean class="com.itcast.intercepters.MyIntercepters"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 
     <!--springmvc 注解支持-->
     <mvc:annotation-driven/>

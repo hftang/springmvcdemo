@@ -26,4 +26,17 @@ public class UserController {
         System.out.println("testController--->");
         return "success";
     }
+
+    /**
+     * 测试拦截器
+     *
+     * @return
+     */
+
+    @RequestMapping(path = "/testInterceptors")
+    public String testInterceptors() {
+        System.out.println("controller--->");
+
+        return "success";
+    }
 }

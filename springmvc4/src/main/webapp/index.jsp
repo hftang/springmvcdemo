@@ -11,7 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<a href="user/testController">测试用</a>
+<a href="user/testController">测试用</a></br>
+<a href="user/testInterceptors">testInterceptors</a></br>
 
 </body>
 </html>
